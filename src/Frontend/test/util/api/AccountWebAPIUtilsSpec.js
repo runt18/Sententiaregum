@@ -27,15 +27,17 @@ describe('AccountWebAPIUtils', () => {
 
   it('creates account', () => {
     const handler = spy(), testId  = Math.random(), response = { id: testId };
-    moxios.stubRequest('/api/users.json', {
-      status: 201,
-      data:   response
-    });
 
     AccountWebAPIUtils.createAccount({ username: 'Ma27' }, handler, function () {});
     moxios.wait(() => {
-      assert.calledOnce(handler);
-      expect(handler.calledWith(response)).to.equal(true);
+      let request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 201,
+        data:   response
+      }).then(function () {
+        assert.calledOnce(handler);
+        expect(handler.calledWith(response)).to.equal(true);
+      });
     });
   });
 

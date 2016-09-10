@@ -12,9 +12,10 @@
 
 import { GET_LOCALES, CHANGE_LOCALE } from '../constants/Locale';
 import Locale from '../util/http/LocaleService';
-import LocaleWebAPIUtils from '../util/api/LocaleWebAPIUtils';
 import UserStore from '../store/UserStore';
 import getStateValue from '../store/provider/getStateValue';
+import axios from 'axios';
+import ApiKey from '../util/http/ApiKeyService';
 
 /**
  * Action creator for the language loader.
@@ -22,11 +23,7 @@ import getStateValue from '../store/provider/getStateValue';
  * @returns {Function} The language initialization action.
  */
 export function loadLanguages() {
-  return dispatch => {
-    LocaleWebAPIUtils.getLocales(response => {
-      dispatch(GET_LOCALES, { locales: response });
-    });
-  };
+  return dispatch => axios.get('/api/locale.json').then(locales => dispatch(GET_LOCALES, { locales }));
 }
 
 /**
@@ -40,7 +37,9 @@ export function changeLocale(locale) {
   return dispatch => {
     Locale.setLocale(locale);
     if (getStateValue(UserStore, 'is_logged_in', false)) {
-      LocaleWebAPIUtils.changeUserLocale(locale);
+      axios.patch('/api/protected/locale.json', { locale }, {
+        headers: { 'X-API-KEY': ApiKey.getApiKey() }
+      });
     }
 
     dispatch(CHANGE_LOCALE, { locale });

@@ -128,7 +128,7 @@
     "node":    true,
     "mocha":   true
   },
-  "extends": ["eslint:recommended", "plugin:varspacing/recommended"],
+  "extends": ["eslint:recommended", "plugin:varspacing/recommended", "plugin:react/recommended"],
   "plugins": [
     "react",
     "varspacing"
