@@ -11,11 +11,11 @@
 'use strict';
 
 import { GET_LOCALES, CHANGE_LOCALE } from '../constants/Locale';
-import Locale from '../util/http/LocaleService';
+import Locale from '../util/http/Locale';
 import UserStore from '../store/UserStore';
 import getStateValue from '../store/provider/getStateValue';
 import axios from 'axios';
-import ApiKey from '../util/http/ApiKeyService';
+import ApiKey from '../util/http/ApiKey';
 
 /**
  * Action creator for the language loader.

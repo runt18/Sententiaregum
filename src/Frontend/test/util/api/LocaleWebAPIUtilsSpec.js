@@ -15,7 +15,7 @@ import { expect } from 'chai';
 import moxios from 'moxios';
 import LocaleWebAPIUtils from '../../../util/api/LocaleWebAPIUtils';
 import axios from 'axios';
-import ApiKey from '../../../util/http/ApiKeyService';
+import ApiKey from '../../../util/http/ApiKey';
 
 describe('LocaleWebAPIUtils', () => {
   it('loads available locales', () => {

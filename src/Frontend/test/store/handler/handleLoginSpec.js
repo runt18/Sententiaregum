@@ -12,7 +12,7 @@
 
 import { stub } from 'sinon';
 import { expect } from 'chai';
-import Locale from '../../../util/http/LocaleService';
+import Locale from '../../../util/http/Locale';
 import handleLogin from '../../../store/handler/handleLogin';
 import counterpart from 'counterpart';
 

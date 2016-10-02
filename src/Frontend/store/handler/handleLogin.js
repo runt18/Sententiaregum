@@ -10,7 +10,7 @@
 
 'use strict';
 
-import Locale from '../../util/http/LocaleService';
+import Locale from '../../util/http/Locale';
 import counterpart from 'counterpart';
 
 /**

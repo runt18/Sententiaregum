@@ -11,11 +11,11 @@
 'use strict';
 
 import UserStore from '../../../store/UserStore';
-import { protectPage, redirectToDashboard } from '../../../util/security/RouterHooks';
+import { protectPage, redirectToDashboard } from '../../../util/react/routerHooks';
 import { expect } from 'chai';
 import { stub, spy } from 'sinon';
 
-describe('RouterHooks', () => {
+describe('routerHooks', () => {
   it('protects page', () => {
     stub(UserStore, 'getState', () => ({ is_logged_in: false }));
     const replace = spy();

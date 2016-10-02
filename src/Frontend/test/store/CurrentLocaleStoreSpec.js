@@ -15,7 +15,7 @@ import { runAction } from 'sententiaregum-flux-container';
 import CurrentLocaleStore from '../../store/CurrentLocaleStore';
 import { stub } from 'sinon';
 import counterpart from 'counterpart';
-import Locale from '../../util/http/LocaleService';
+import Locale from '../../util/http/Locale';
 
 describe('CurrentLocaleStore', () => {
   it('handles locale change', () => {

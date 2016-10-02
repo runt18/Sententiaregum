@@ -13,7 +13,7 @@
 import UserStore from '../../store/UserStore';
 import { runAction } from 'sententiaregum-flux-container';
 import { expect } from 'chai';
-import ApiKey from '../../util/http/ApiKeyService';
+import ApiKey from '../../util/http/ApiKey';
 import { stub } from 'sinon';
 
 describe('UserStore', () => {

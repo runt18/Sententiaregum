@@ -14,7 +14,7 @@ import { expect } from 'chai';
 import { spy, assert, stub } from 'sinon';
 import AccountWebAPIUtils from '../../../util/api/AccountWebAPIUtils';
 import moxios from 'moxios';
-import ApiKey from '../../../util/http/ApiKeyService';
+import ApiKey from '../../../util/http/ApiKey';
 
 describe('AccountWebAPIUtils', () => {
   beforeEach(() => {

@@ -13,7 +13,7 @@
 import { stub, assert, createStubInstance } from 'sinon';
 import { changeLocale, loadLanguages } from '../../actions/LocaleActions';
 import { expect } from 'chai';
-import Locale from '../../util/http/LocaleService';
+import Locale from '../../util/http/Locale';
 import LocaleWebAPIUtils from '../../util/api/LocaleWebAPIUtils';
 import { runAction } from 'sententiaregum-flux-container';
 import UserStore from '../../store/UserStore';

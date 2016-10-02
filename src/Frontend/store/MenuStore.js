@@ -12,9 +12,10 @@
 
 import { store } from 'sententiaregum-flux-container';
 import filterItemsByVisibility from './handler/filterItemsByVisibility';
+import { TRANSFORM_ITEMS } from '../constants/Menu';
 
 export default store({
-  TRANSFORM_ITEMS: {
+  [TRANSFORM_ITEMS]: {
     params:   ['items', 'authData'],
     function: filterItemsByVisibility
   }

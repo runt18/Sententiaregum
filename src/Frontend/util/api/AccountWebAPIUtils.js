@@ -11,7 +11,7 @@
 'use strict';
 
 import axios from 'axios';
-import ApiKey from '../http/ApiKeyService';
+import ApiKey from '../http/ApiKey';
 
 /**
  * API utils for account interactions.

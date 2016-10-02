@@ -11,7 +11,7 @@
 'use strict';
 
 import { store } from 'sententiaregum-flux-container';
-import Locale from '../util/http/LocaleService';
+import Locale from '../util/http/Locale';
 import handleLogin from './handler/handleLogin';
 
 export default store({

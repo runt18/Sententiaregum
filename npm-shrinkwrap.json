@@ -3780,14 +3780,14 @@
       "resolved": "https://registry.npmjs.org/randomatic/-/randomatic-1.1.5.tgz"
     },
     "react": {
-      "version": "15.3.1",
-      "from": "react@15.3.1",
-      "resolved": "https://registry.npmjs.org/react/-/react-15.3.1.tgz"
+      "version": "15.3.2",
+      "from": "react@15.3.2",
+      "resolved": "https://registry.npmjs.org/react/-/react-15.3.2.tgz"
     },
     "react-addons-update": {
-      "version": "15.3.1",
-      "from": "react-addons-update@>=15.3.1 <16.0.0",
-      "resolved": "https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.1.tgz"
+      "version": "15.3.2",
+      "from": "react-addons-update@15.3.2",
+      "resolved": "https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz"
     },
     "react-bootstrap": {
       "version": "0.30.3",
@@ -3807,9 +3807,9 @@
       }
     },
     "react-dom": {
-      "version": "15.3.1",
-      "from": "react-dom@15.3.1",
-      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.3.1.tgz"
+      "version": "15.3.2",
+      "from": "react-dom@15.3.2",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.3.2.tgz"
     },
     "react-interpolate-component": {
       "version": "0.9.1",
@@ -3863,9 +3863,9 @@
       "resolved": "https://registry.npmjs.org/react-recaptcha/-/react-recaptcha-2.1.1.tgz"
     },
     "react-router": {
-      "version": "2.8.0",
-      "from": "react-router@2.8.0",
-      "resolved": "https://registry.npmjs.org/react-router/-/react-router-2.8.0.tgz",
+      "version": "2.8.1",
+      "from": "react-router@2.8.1",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-2.8.1.tgz",
       "dependencies": {
         "warning": {
           "version": "3.0.0",
@@ -4038,9 +4038,14 @@
       "resolved": "https://registry.npmjs.org/semver/-/semver-4.3.6.tgz"
     },
     "sententiaregum-flux-container": {
-      "version": "1.0.5",
-      "from": "sententiaregum-flux-container@>=1.0.5 <2.0.0",
-      "resolved": "https://registry.npmjs.org/sententiaregum-flux-container/-/sententiaregum-flux-container-1.0.5.tgz"
+      "version": "2.0.1",
+      "from": "sententiaregum-flux-container@2.0.1",
+      "resolved": "https://registry.npmjs.org/sententiaregum-flux-container/-/sententiaregum-flux-container-2.0.1.tgz"
+    },
+    "sententiaregum-flux-react": {
+      "version": "1.0.0",
+      "from": "sententiaregum-flux-react@latest",
+      "resolved": "https://registry.npmjs.org/sententiaregum-flux-react/-/sententiaregum-flux-react-1.0.0.tgz"
     },
     "set-immediate-shim": {
       "version": "1.0.1",
